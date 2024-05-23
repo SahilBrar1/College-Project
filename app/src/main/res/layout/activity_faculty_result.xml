@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#009688">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Info"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Vehicle Image -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Table -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle No"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/vehicle_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="123456"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Owner Name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/vehicle_owner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Sahil"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sticker No."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/sticker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="98745"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!-- Row 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hostel Name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/hostel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Narhari"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!-- Row 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Department"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/Department"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="DCSA"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!-- Row 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="University Roll No."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/UniRoll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="2022007903"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!-- Row 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:id="@+id/ClassRoll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Class Roll No."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="119"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!-- Row 8 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mob No."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/MobNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="9306105213"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
