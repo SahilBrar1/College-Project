@@ -1,10 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Student_Dashboard_Activity">
+    android:padding="16dp"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- User Photo -->
+    <ImageView
+        android:id="@+id/imgUserPhoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/doctor"
+     />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgUserPhoto"
+        android:layout_centerHorizontal="true"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:layout_marginBottom="24dp"
+    android:textStyle="bold" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Dashboard"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold" />
+
+    <!-- Account Info Button -->
+    <Button
+        android:id="@+id/btnAccountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Info"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+    <!-- Warnings Button -->
+    <Button
+        android:id="@+id/btnWarnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warnings"
+        android:layout_below="@id/btnAccountInfo"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+    <!-- Punishment/Fine Button -->
+    <Button
+        android:id="@+id/btnPunishmentFine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Punishment/Fine"
+        android:layout_below="@id/btnWarnings"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnPunishmentFine"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

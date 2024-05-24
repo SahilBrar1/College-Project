@@ -25,8 +25,8 @@ public class StudentLoginFragment extends Fragment {
         student_login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iNext = new Intent(getActivity(),  Student_Dashboard_Activity.class);
-                startActivity(iNext);
+                Intent iNext = new Intent(getActivity(),Student_Dashboard_Activity.class);
+                        startActivity(iNext);
             }
         });
 

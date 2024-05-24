@@ -6,7 +6,7 @@
     android:paddingTop="100dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:background="#2A5057">
+    android:background="#1E545E">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:background="#4A707C"/>
+        android:layout_height="564dp"
+        android:background="#4A707C" />
 
 </LinearLayout>
